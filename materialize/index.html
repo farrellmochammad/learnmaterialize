@@ -5,42 +5,79 @@
         rel="stylesheet">
         <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
         <style>
+            .shadow {
+                box-shadow: 10px 10px 5px grey;
+            }
+            .shadowbanner {
+                margin: auto;
+                width: 40%;
+                padding: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+            }
+            .colortext {
+                color: white;
+                text-align: center;
+            }
             .topnav {
-                background: blue;
+                background: #29B6F6;
             }
             .bgf {
-                background: blue;
+                background-image: linear-gradient(#29B6F6, #66BB6A);
                 width: 100%;
-                height: 464px;
+                height: 620px;
             }
             .bgu {
                 width: 100%;
-                height: 464px;
+                height: 550px;
+                background: #EEEEEE;
             }
-            #title {
+            .title {
                 text-align: center;
-                
+                margin-top: 0%;
+                margin-bottom: 0%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            .center {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
             }
             .textbox {
                 color: white;
                 text-align: center;
+                margin-top: 0%;
+                margin-bottom: 0%;
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
             .titletextbox {
                 margin: 10px, 0px, 10px, 0px;
                 text-align: center;
             }
             .parent {
-                width: 100%;
-                height: 100%;
+                width: 250px;
+                height: 250px;
+                border-radius: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
             }
             #pram {
                 background-image: "https://asset.kompas.com/data/photo/2016/07/12/202816620160712WAK201-1-780x390.jpg";
             }
-            .cont {
-                margin-bottom: 0;
+            .info {
+                width: 100%;
+                height: 250px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
-            .cont1 {
-                padding: 0;
+            .btnclicked{
+                color: blue;
+            }
+            .cardheight{
+                height: 250px;
             }
         </style>
     </head>
@@ -59,21 +96,19 @@
             </div>
         </nav>
         <div class="bgu">
-                <h1 id="title">Armada Cuckoo</h1>
-                <div class="carousel">
-                        <a class="carousel-item" href="https://www.boeing.com/commercial/777"><img src="https://cdn.grahamcluley.com/wp-content/uploads/2015/05/boeing-thumb.jpeg"><h7 class = "title">Boeing 787 - 800</h7></a>
-                        <a class="carousel-item" href="https://www.boeing.com/commercial/777"><img src="https://cdn.grahamcluley.com/wp-content/uploads/2015/05/boeing-thumb.jpeg"><h7 class = "title">Airbus A320 - 300</h7></a>
-                        <a class="carousel-item" href="https://www.boeing.com/commercial/777"><img src="https://cdn.grahamcluley.com/wp-content/uploads/2015/05/boeing-thumb.jpeg"><h7 class = "title">Boeing 777-300 ER</h7></a>
-                </div>
+                <h1 class="title">tbengkel Company</h1>
+                <img class="mySlides shadowbanner" src="https://danstechmotor.files.wordpress.com/2012/06/78584_mashiny_3000x2250_www-gdefon-ru.jpg" width="400px" height="400px">
+                <img class="mySlides shadowbanner" src="http://desktopwallpapers.org.ua/images/201203/desktopwallpapers.org.ua_13385.jpg" width="400px" height="400px">
+                <img class="mySlides shadowbanner" src="http://wallpaper-table.ru/_ph/25/822088023.jpg" width="400px" height="400px">
         </div>
         <div class = "bgf">
             <div class="container">
-                <h1 id="title" class="textbox">Mengapa Cuckoo Airlines ?</h1>
+                <h1 id="title" class="textbox">Mengapa tbengkel</h1>
                 <div class= "row">
                     <div class="col s4 textbox">
-                            <h4 class="titletextbox">More Legroom</h4>
-                            <i class="large material-icons">airline_seat_legroom_normal</i>
-                            <p>Ruang kaki yang besar memberikan kenyamanan saat penerbangan jangka lama</p>
+                            <h4 class="titletextbox">Mekanik Ahli</h4>
+                            <i class="large material-icons">people</i>
+                            <p>Mekanik yang ahli dalam bidangnya masing - masing</p>
                     </div>
                     <div class="col s4 textbox">
                             <h4 class="titletextbox">Lebih Murah</h4>
@@ -81,38 +116,110 @@
                             <p>Pelayanan yang terbaik dengan harga termurah</p>
                     </div>
                     <div class="col s4 textbox">
-                            <h4 class="titletextbox">Skyteam</h4>
-                            <i class="large material-icons">thumb_up</i>
-                            <p>Termasuk Skyteam dengan maskapi bintang 5</p>
-                    </div>   
+                            <h4 class="titletextbox">Service On Demand</h4>
+                            <i class="large material-icons">home</i>
+                            <p>Lakukan servis tanpa perlu repot di rumah</p>
+                    </div> 
+                    <div class="col s12 textbox">
+                            <h4 class="titletextbox">Invoice</h4>
+                            <i class="large material-icons">book</i>
+                            <p>Invoice langsung dikirim ke email customer</p>
+                    </div> 
                 </div>
             </div>
         </div>
-        <div class = "bgu">
-            <div class = "row cont">
-                <div class = "col s6 cont1">
-                    <img src="https://asset.kompas.com/data/photo/2016/07/12/202816620160712WAK201-1-780x390.jpg" class="parent">
+        <div class="bgu">
+            <div class = "info">
+                <div class="row">
+                    <div class="col s3 m6">
+                         <img src="https://www.gilamotor.com/wp-content/uploads/2017/09/Service-Berkala-Motor-Honda-Lebih-Enak-Pakai-%E2%80%9CPaket-Hebat%E2%80%9D.jpg" class="parent shadow">
+                    </div>
+                    <div class="col s9 m6">
+                        <div class="card topnav cardheight">
+                            <div class="card-content white-text">
+                                <span class="card-title">Servis Motor</span>
+                                    <p>Lakukan servis motor di rumah dengan harga paling bersaing</p>
+                                    <p><a href="#">Biaya</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class = "col s6">
-                    <h1>Test BosQ </h1>
+            </div>
+            <div class = "info">
+                    <div class="row">
+                        <div class="col s9 m6">
+                            <div class="card topnav cardheight">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Servis Mobil</span>
+                                        <p>Lakukan servis mobil di rumah dengan harga paling bersaing</p>
+                                        <p><a href="#">Biaya</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s3 m6">
+                                <img src="http://www.halloriau.com/foto_berita/27dh1.jpg" class="parent shadow">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="bgf">
+            <h1 class="title colortext">Our Location</h1>
+            <div id="googleMap" style="width:50%;height:300px;" class="center shadowbanner"></div>
+            <h3 class="colortext">tbengkel</h3>
+            <h5 class="colortext">Jalan Telekomunikasi Nomor 1</h5>
+            <h5 class="colortext">kaseptbengkel@gmail.com</h5>
+            <h5 class="colortext">+6281224727001</h5>
+        </div>
+        <div class="bgu">
+            <h1 class="title"> Our Partners</h1>
+            <div class="row">
+                <div>
+                    <div class="col s6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda_Logo.svg" >
+                    </div>
                 </div>
             </div>
         </div>
-
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/materialize.min.js"></script>
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.carousel');
-                var instances = M.Carousel.init(elems, options);
-            });
+            var myIndex = 0;
+            carousel();
 
-            // Or with jQuery
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
 
-            $(document).ready(function(){
-                $('.carousel').carousel();
-            });
+            function myMap() {
+            var myLatLng = {lat: -6.9759888, lng: 107.6303859};
+
+            var mapProp= {
+                center:myLatLng,
+                zoom:15,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+             var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'tbengkel location'
+                });
+            }
+
+
         </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjNjt9h44ITrRameI9BFdSSt5p4s2JbNc&callback=myMap"></script>
+
     </body>
 
 </html>
